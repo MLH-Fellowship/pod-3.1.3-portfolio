@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import 'about';
 
 .card-container {
     display: grid;
@@ -33,6 +34,7 @@ body {
     background-color: #f5f5f9;
     margin-bottom: 50px;
 }
+
 h2 {
     margin-bottom: 20px;
     margin-top: 20px;
