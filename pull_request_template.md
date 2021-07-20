@@ -1,6 +1,6 @@
 ### Why This PR Adds Value
 
-Why did you submit this PR? What are its benefits? - Could use Issue description 
+Why did you submit this PR? What are its benefits? - Use Issue Description as inspiration
 
 ### What This PR Adds
 
