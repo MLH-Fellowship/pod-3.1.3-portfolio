@@ -13,15 +13,17 @@
     width: 350px;
 }
 
-.nav-content .nav-logo {
+.nav-content {
     height: 60px;
-    margin: auto;
 }
 
 .nav-logo {
-    display: flex;
+    height: 60px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: 45%;
+    margin-right: 10%;
 }
 
 .nav-logo img {
@@ -29,9 +31,15 @@
 }
 
 .nav-content nav {
-    display: block;
+    display: inline;
     width: 100%;
     text-align: right;
     padding-top: 0px;
     padding-right: 0px;
+    margin-right: 50px;
+}
+
+.nav-content nav a {
+  color: white;
+  text-decoration: none;
 }
