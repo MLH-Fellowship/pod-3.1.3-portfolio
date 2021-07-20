@@ -1,3 +1,9 @@
+$body-white:#f5f5f9;
+$banner-light-blue: #1d539f;
+$white : white;
+$black: black;
+$a-light-blue:#0f90fe; 
+$code-light-blue: #17a2b8;
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Open Sans", serif;
 }
@@ -7,7 +13,7 @@ h2 {
 }
 
 body {
-    background-color: #f5f5f9 !important;
+    background-color:$body-white !important;
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
@@ -17,7 +23,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #1d539f;
+    background-color: $banner-light-blue;
 }
 
 .banner .logo {
@@ -28,7 +34,7 @@ body {
 }
 
 .banner .title {
-    color: white;
+    color: $white;
     font-size: 50px;
     font-weight: 700;
 }
@@ -41,61 +47,61 @@ body {
 .page h1 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: $black;
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: $black;
     margin-bottom: 0.5em;
 }
 
 .page h3 {
     font-weight: 600 !important;
     text-align: left !important;
-    color: black;
+    color: $black;
     font-size: 1.3rem;
 }
 
 .page h4 {
     font-weight: 600 !important;
     text-align: center !important;
-    color: black;
+    color: $black;
 }
 
 .page p {
-    color: black;
+    color: $black;
     font-weight: 500;
 }
 
 .page td {
-    color: black;
+    color: $black;
 }
 
 .page th {
-    color: black;
+    color: $black;
 }
 
 .page li {
-    color: black;
+    color: $black;
 }
 
 .page a {
-    color: #0f90fe;
+    color:$a-light-blue;
 }
 
 .page a:hover {
-    color: #0f90fe;
+    color: $a-light-blue;
 }
 
 .page code {
-    color: #17a2b8;
+    color: $code-light-blue;
 }
 
 hr {
-    background-color: black;
+    background-color: $black;
     padding: 1px;
     margin-top: 1em !important;
     margin-bottom: 1em !important;
@@ -116,7 +122,7 @@ hr {
     }
 
     .banner .title {
-        color: white;
+        color: $white;
         font-size: 30px;
         font-weight: 700;
     }

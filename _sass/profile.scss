@@ -1,12 +1,14 @@
+$white: white;
+$profile-bg-light-blue: #1d539f;
 .profile {
-    background-color: #1d539f !important;
+    background-color: $profile-bg-light-blue !important;
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
     h1 {
         font-size: 50px;
         font-weight: 700;
-        color: white;
+        color: $white;
     }
     
     img {
