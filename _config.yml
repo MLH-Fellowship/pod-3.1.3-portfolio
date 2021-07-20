@@ -11,3 +11,8 @@ sass:
   sass_dir: _sass
 
 icon: /assets/img/icon.jpg
+
+# your google analytics tag goes here
+# how to get your analytics tag?
+# https://support.google.com/analytics/answer/1008080
+google-analytics: XX-000000000-0
