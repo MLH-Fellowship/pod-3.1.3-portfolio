@@ -1,9 +1,6 @@
-$body-white:#f5f5f9;
-$banner-light-blue: #1d539f;
-$white : white;
-$black: black;
-$a-light-blue:#0f90fe; 
-$code-light-blue: #17a2b8;
+
+
+
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Open Sans", serif;
 }
@@ -13,7 +10,7 @@ h2 {
 }
 
 body {
-    background-color:$body-white !important;
+    background-color:var(--body-light-white) !important;
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
@@ -23,7 +20,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: $banner-light-blue;
+    background-color: var(--banner-light-blue);
 }
 
 .banner .logo {
@@ -34,7 +31,7 @@ body {
 }
 
 .banner .title {
-    color: $white;
+    color: var(--white);
     font-size: 50px;
     font-weight: 700;
 }
@@ -47,61 +44,61 @@ body {
 .page h1 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: $black;
+    color: var(--black);
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: $black;
+    color: var(--black);
     margin-bottom: 0.5em;
 }
 
 .page h3 {
     font-weight: 600 !important;
     text-align: left !important;
-    color: $black;
+    color: var(--black);
     font-size: 1.3rem;
 }
 
 .page h4 {
     font-weight: 600 !important;
     text-align: center !important;
-    color: $black;
+    color: var(--black);
 }
 
 .page p {
-    color: $black;
+    color: var(--black);
     font-weight: 500;
 }
 
 .page td {
-    color: $black;
+    color: var(--black);
 }
 
 .page th {
-    color: $black;
+    color: var(--black);
 }
 
 .page li {
-    color: $black;
+    color: var(--black);
 }
 
 .page a {
-    color:$a-light-blue;
+    color: var(--a-light-blue);
 }
 
 .page a:hover {
-    color: $a-light-blue;
+    color: var(--a-light-blue);
 }
 
 .page code {
-    color: $code-light-blue;
+    color: var(--code-light-blue);
 }
 
 hr {
-    background-color: $black;
+    background-color: var(--black);
     padding: 1px;
     margin-top: 1em !important;
     margin-bottom: 1em !important;
@@ -122,7 +119,7 @@ hr {
     }
 
     .banner .title {
-        color: $white;
+        color: var(--white);
         font-size: 30px;
         font-weight: 700;
     }

@@ -4,10 +4,6 @@
 @import 'profile';
 @import 'page';
 
-$body-white: #f5f5f9;
-$font-black: #404040;
-$white: white;
-$black: black;
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -34,7 +30,7 @@ $black: black;
 
 
 body {
-    background-color: $body-white;
+    background-color: var(--body-light-white);
     margin-bottom: 50px;
 }
 h2 {
@@ -49,14 +45,14 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: $white;
+    background-color: var(--white);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
 }
 
 a {
-    color: $black;
+    color: var(--black);
 }
 
 .info {
@@ -78,7 +74,7 @@ a {
 
     .dates {
         font-size: small;
-        color: $font-black;
+        color: var(--font-light-black);
     }
 }
 
