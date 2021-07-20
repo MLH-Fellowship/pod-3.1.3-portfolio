@@ -51,6 +51,20 @@ h2 {
     font-size: 1.2em;
 }
 
+.card.full {
+  width: 90vw;
+  margin: 20px 5%;
+}
+
+.card.full .icon {
+  width: 50%;
+  height: auto;
+}
+
+.card.full .icon img {
+  border-radius: 50%;
+}
+
 a {
     color: black;
 }
