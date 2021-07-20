@@ -8,6 +8,8 @@ Why did you submit this PR? What are its benefits? - Use Issue Description as in
 
 > Add a screenshot below of what your changes look like - especially if it changes the UI. Remove this line and the quotation marks on the line below and add the alt text and image link accordingly. You can also upload images to GitHub by dragging and dropping (or copying and pasting) the image.
 
+### Screenshot
+
 `![Image Alt Text](Image Link)`
 
 ### How This PR Could Be Improved
