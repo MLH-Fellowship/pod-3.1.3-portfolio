@@ -1,0 +1,22 @@
+<h2> About</h2>
+<div class="about-section">
+    {% for item in site.data.about%}
+    <div class="child left">
+    
+        <div class="info">
+            <p class="name"><b>Full Name:</b> {{item.name}}</p>
+            <p class="number"><b>Contact:</b> {{item.number}}</p>
+            <p class="email"><b>E-mail:</b> {{item.email}}</p>
+            <p class="funfact"><b>Fun Fact:</b> {{item.funfact}}</p>
+        </div>
+   
+    </div>
+    <div class="child">
+        <div class="bio">
+            <h1>Hello there!</h1>
+            <p class="name">{{item.bio}}</p>
+        </div>
+   
+    </div>
+    {% endfor %}
+</div>
