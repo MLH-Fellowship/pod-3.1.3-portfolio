@@ -55,6 +55,27 @@ h2 {
   width: 90vw;
   margin: 20px 5%;
 
+  .info {
+    padding: 2.5%;
+
+    .location {
+      margin: 2.5% 0;
+    }
+
+    button {
+      background: #0766CA;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5%;
+      padding: 2.5%;
+
+      a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+
   .icon {
     width: 50%;
     height: auto;
@@ -89,6 +110,11 @@ a {
     .dates {
         font-size: small;
         color: #404040;
+    }
+
+    .text {
+      font-size: medium;
+      font-weight: 300;
     }
 }
 
