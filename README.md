@@ -2,7 +2,7 @@
 
 This is a Jekyll website template designed for Pre Fellowship Fellows. During the Pre Fellowship, you'll build a project
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/97877b3e-9f36-4939-a24c-0b622f923d50/deploy-status)](https://app.netlify.com/sites/mlh-fellowship-portfolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a8dce37-f16e-426c-b3f2-f9fa9faf0fb4/deploy-status)](https://app.netlify.com/sites/practically-pi-portfolio-template/deploys)
 
 
 ## Make your own!
