@@ -13,5 +13,5 @@ jobs:
       - run: sudo apt-get install ruby-full build-essential zlib1g-dev
       - run: sudo gem install jekyll bundler
       - run: sudo bundle install
-      - run: jekyll build
+      - run: sudo bundle exec jekyll build
       - run: lhci autorun
