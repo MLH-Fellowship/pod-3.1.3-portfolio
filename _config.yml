@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" 
 url: "/" 
 twitter_username: mlhacks
-github_username:  mlh-fellowship
+github_username:  wrussell1999
 
 sass:
   sass_dir: _sass
