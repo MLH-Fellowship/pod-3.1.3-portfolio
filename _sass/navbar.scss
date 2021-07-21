@@ -54,7 +54,8 @@
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  color: var(--title-color);
+  color: white;
+  background-color: var(--banner-background-color);
 
   em {
     margin-left: 10px;
