@@ -37,7 +37,6 @@
     text-align: right;
     padding-left: 5%;
     padding-right: 2%;
-    // margin-right: 5%;
 }
 
 .nav-content nav a {
@@ -49,15 +48,6 @@
   float: right;
   width: 30%;
   padding-top: 1%;
-}
-
-@media screen and (max-width: 1059px) {
-  .nav-logo {
-    margin-left: 40%;
-  }
-  .nav-links {
-    width: 40%;
-  }
 }
 
 /* Dark Mode toggle */
