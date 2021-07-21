@@ -1,6 +1,6 @@
 # Portfolio Template
 
-This is a Jekyll website template designed for Pre Fellowship Fellows. During the Pre Fellowship, you'll build a project
+This is a Jekyll website template designed for Pre Fellowship Fellows. This will be your first project for your pre-fellowship. You will first build this portfolio website with your peers than use it as a template for yourself.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/97877b3e-9f36-4939-a24c-0b622f923d50/deploy-status)](https://app.netlify.com/sites/mlh-fellowship-portfolio/deploys)
 
@@ -15,7 +15,9 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. During th
 
 ## Add your portfolio
 
-Head to `_data` and fill out either `projects.yml`, `experience.yml` and `education.yml`.
+Head to `_data` and fill out files `projects.yml`, `experience.yml`, `education.yml` and `recommendation.yml`.
+
+
 
 Project example.
 ```yaml
@@ -38,6 +40,14 @@ Education example.
   institute: MLH Fellowship
   dates: Summer 2021
   logo: fellowship.svg
+```
+
+Recommendation example.
+```yaml
+- title: HackTheMidlands
+  author: Robbie
+  text: MLH Fellowship
+  date: Summer 2021
 ```
 ## Add project posts
 
@@ -65,7 +75,7 @@ layout: page
 
 ## Development
 
-If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
+If you want to test it locally or add some new features, run the commands below. Make sure to have [Ruby](https://www.ruby-lang.org/en/downloads/ "Ruby Installation") and Bundler (**gem install bundler**) installed.
 
 ```
 bundle install --path vendor/bundle
