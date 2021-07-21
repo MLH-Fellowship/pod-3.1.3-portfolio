@@ -29,4 +29,25 @@
     <link lang='sass' rel="stylesheet" href="/assets/css/main.css">
     <link rel='icon' href='/assets/img/favicon.ico' type='image/x-icon' />
     <title>{{ site.title }}</title>
+
+    <script type="text/javascript">
+      // Wait for document to load
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        // Get the button switcher from DOM
+        var themeSwitcher = document.getElementById("theme-switcher");
+
+        themeSwitcher.onclick = function() {
+          // Get the current color theme
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+
+          // If dark, switch to light : If light, switch to dark
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+          // Set the new color theme
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+        }
+      });
+    </script>
 </head>

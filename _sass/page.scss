@@ -1,3 +1,6 @@
+
+
+
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Open Sans", serif;
 }
@@ -7,7 +10,7 @@ h2 {
 }
 
 body {
-    background-color: #f5f5f9 !important;
+    background-color:var(--body-color) !important;
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
@@ -17,7 +20,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #1d539f;
+    background-color: var(--banner-background-color);
 }
 
 .banner .logo {
@@ -28,7 +31,7 @@ body {
 }
 
 .banner .title {
-    color: white;
+    color: var(--title-color);
     font-size: 50px;
     font-weight: 700;
 }
@@ -41,61 +44,61 @@ body {
 .page h1 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: var(--text-color);
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: var(--text-color);
     margin-bottom: 0.5em;
 }
 
 .page h3 {
     font-weight: 600 !important;
     text-align: left !important;
-    color: black;
+    color: var(--text-color);
     font-size: 1.3rem;
 }
 
 .page h4 {
     font-weight: 600 !important;
     text-align: center !important;
-    color: black;
+    color: var(--text-color);
 }
 
 .page p {
-    color: black;
+    color: var(--text-color);
     font-weight: 500;
 }
 
 .page td {
-    color: black;
+    color: var(--text-color);
 }
 
 .page th {
-    color: black;
+    color: var(--text-color);
 }
 
 .page li {
-    color: black;
+    color: var(--text-color);
 }
 
 .page a {
-    color: #0f90fe;
+    color: var(--page-color);
 }
 
 .page a:hover {
-    color: #0f90fe;
+    color: var(--page-color);
 }
 
 .page code {
-    color: #17a2b8;
+    color: var(--page-code-color);
 }
 
 hr {
-    background-color: black;
+    background-color: var(--text-color);
     padding: 1px;
     margin-top: 1em !important;
     margin-bottom: 1em !important;
@@ -116,7 +119,7 @@ hr {
     }
 
     .banner .title {
-        color: white;
+        color: var(--title-color);
         font-size: 30px;
         font-weight: 700;
     }

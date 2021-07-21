@@ -2,7 +2,7 @@
 
 This is a Jekyll website template designed for Pre Fellowship Fellows. This will be your first project for your pre-fellowship. You will first build this portfolio website with your peers than use it as a template for yourself.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/97877b3e-9f36-4939-a24c-0b622f923d50/deploy-status)](https://app.netlify.com/sites/mlh-fellowship-portfolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a8dce37-f16e-426c-b3f2-f9fa9faf0fb4/deploy-status)](https://app.netlify.com/sites/practically-pi-portfolio-template/deploys)
 
 
 ## Make your own!
@@ -72,6 +72,24 @@ layout: page
   date: Summer 2021
   page-name: project
 ```
+
+## Add Google Analytics
+
+1. Create a Google account if you don't have one
+
+2. Sign in to your [Analytics account](https://analytics.google.com/)
+
+3. Click Admin
+
+4. Select an account from the menu in the *ACCOUNT* column.
+
+5. Select a property from the menu in the *PROPERTY* column.
+   
+6. Under *PROPERTY*, click *Tracking Info* -> *Tracking Code*. Your Tracking ID will be displayed at the top of the page
+
+7. Inside `_config.yml` file, simply enter your tracking id under `google-analytics` field.
+
+If you get stuck in any of these steps, refer [here](https://support.google.com/analytics/answer/1008080).
 
 ## Development
 
