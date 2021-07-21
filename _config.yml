@@ -6,6 +6,7 @@ baseurl: "/"
 url: "/" 
 twitter_username: mlhacks
 github_username:  wrussell1999
+linkedin_username: wrussell1999
 
 sass:
   sass_dir: _sass
