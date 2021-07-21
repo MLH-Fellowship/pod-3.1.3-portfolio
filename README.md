@@ -1,6 +1,6 @@
 # Portfolio Template
 
-This is a Jekyll website template designed for Pre Fellowship Fellows. This will be your first project for your pre-fellowship. You will first build this portfolio website with your peers than use it as a template for yourself.
+This is a Jekyll website template designed for Pre Fellowship Fellows. This will be your first project for your pre-fellowship. You will first build this portfolio website with your peers then use it as a template for yourself.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3a8dce37-f16e-426c-b3f2-f9fa9faf0fb4/deploy-status)](https://app.netlify.com/sites/practically-pi-portfolio-template/deploys)
 
@@ -16,6 +16,7 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. This will
 
 ## Directory strucure
 
+```
 .
 ├── _data                       # files to fill up with your data
 ├── _includes                   # HTML files included in the website
@@ -37,6 +38,7 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. This will
 ├── index.html
 ├── lighthousec.js
 └── pull_request_template.md
+```
 
 ## Make your own!
 
