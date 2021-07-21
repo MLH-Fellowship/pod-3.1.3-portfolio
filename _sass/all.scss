@@ -1,3 +1,5 @@
+/* CSS Imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import 'navbar';
@@ -6,11 +8,126 @@
 @import 'about';
 @import 'projects';
 
+/* Global CSS */
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-family: "Open Sans", sans-serif;
 }
+
+body {
+  background-color: var(--body-color);
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 30px;
+  background-color: var(--card-color);
+  border-radius: .375rem;
+  padding: 1.5em;
+  font-size: 1.2em;
+}
+
+a {
+    color: var(--link-colo);
+}
+
+/* Full Width Card CSS */
+
+.card.full {
+  width: 90vw;
+  margin: 20px 5%;
+
+  .icon {
+    width: 50%;
+    height: auto;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .info {
+    padding: 2.5%;
+
+    .location {
+      margin: 2.5% 0;
+    }
+
+    button {
+      background: #0766CA;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5%;
+      padding: 2.5%;
+
+      a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Card Info CSS */
+
+.info {
+  p {
+      margin-top: 5px;
+      margin: 0px;
+      text-align: left;
+  }
+
+  .title {
+      font-size: 500;
+      font-weight: bold;
+  }
+
+  .location {
+      font-size: medium;
+      font-weight: 400;
+  }
+
+  .text {
+    font-size: medium;
+    font-weight: 300;
+  }
+  
+  .dates {
+    font-size: small;
+    color: var(--dates-color);
+    }
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  padding: 10px;
+
+  img {
+      width: 100%;
+  }
+}
+
+/* Netlify form at the end of the index page */
+.form-control {
+    background-color: var(--card-color);
+    border: var(--card-color);
+}
+
+/* Media Query CSS */
 
 @media only screen and (max-width: 1500px) {
   .card-container {
@@ -28,72 +145,4 @@
   .card-container {
     grid-template-columns: 1fr;
   }
-}
-
-
-body {
-    background-color: var(--body-color);
-    margin-bottom: 50px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 30px;
-    background-color: var(--card-color);
-    border-radius: .375rem;
-    padding: 1.5em;
-    font-size: 1.2em;
-}
-
-a {
-    color: var(--link-colo);
-}
-
-.info {
-    p {
-        margin-top: 5px;
-        margin: 0px;
-        text-align: left;
-    }
-
-    .title {
-        font-size: 500;
-        font-weight: bold;
-    }
-
-    .location {
-        font-size: medium;
-        font-weight: 400;
-    }
-
-    .dates {
-        font-size: small;
-        color: var(--dates-color);
-    }
-}
-
-.icon {
-    width: 70px;
-    height: 70px;
-    margin-right: 20px;
-    padding: 10px;
-
-    img {
-        width: 100%;
-    }
-}
-
-/* Netlify form at the end of the index page */
-.form-control {
-    background-color: var(--card-color);
-    border: var(--card-color);
 }

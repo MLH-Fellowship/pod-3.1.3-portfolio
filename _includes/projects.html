@@ -1,21 +1,6 @@
-<div>
+<div id="projects">
   <h2>Projects</h2>
-
-  <script>
-    function openModal(title) {
-        // selects the modal with the corresponding title
-        let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
-        modal.style.display = "block";
-    }
-    function closeModal(title) {
-        // selects the modal with the corresponding title
-        let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
-        modal.style.display = "none";
-    }
-
-  </script>
-
-  <div class="card-container">
+<div class="card-container">
     {% for item in site.data.projects %}
 
       <div class="card" data-title="{{ item.title }}">
