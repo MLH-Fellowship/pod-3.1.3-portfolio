@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 45%;
-    margin-right: 10%;
+    margin-right: auto;
 }
 
 .nav-logo img {
@@ -34,12 +34,27 @@
     display: inline;
     width: 100%;
     text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
-    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 2%;
+    // margin-right: 5%;
 }
 
 .nav-content nav a {
   color: white;
   text-decoration: none;
+}
+
+.nav-links {
+  float: right;
+  width: 30%;
+  padding-top: 1%;
+}
+
+@media screen and (max-width: 1059px) {
+  .nav-logo {
+    margin-left: 40%;
+  }
+  .nav-links {
+    width: 40%;
+  }
 }
