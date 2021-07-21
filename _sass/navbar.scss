@@ -14,15 +14,17 @@
     width: 350px;
 }
 
-.nav-content .nav-logo {
+.nav-content {
     height: 60px;
-    margin: auto;
 }
 
 .nav-logo {
-    display: flex;
+    height: 60px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: 45%;
+    margin-right: auto;
 }
 
 .nav-logo img {
@@ -30,18 +32,30 @@
 }
 
 .nav-content nav {
-    display: block;
+    display: inline;
     width: 100%;
     text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.nav-content nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  float: right;
+  width: 30%;
+  padding-top: 1%;
 }
 
 /* Dark Mode toggle */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  color: var(--title-color);
+  color: white;
+  background-color: var(--banner-background-color);
 
   em {
     margin-left: 10px;
