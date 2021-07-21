@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import 'about';
 
 .card-container {
     display: grid;
@@ -30,9 +31,10 @@
 
 
 body {
-    background-color: #f5f5f9;
+    background-color: var(--body-color);
     margin-bottom: 50px;
 }
+
 h2 {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -45,14 +47,14 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: white;
+    background-color: var(--card-color);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
 }
 
 a {
-    color: black;
+    color: var(--link-colo);
 }
 
 .info {
@@ -74,7 +76,7 @@ a {
 
     .dates {
         font-size: small;
-        color: #404040;
+        color: var(--dates-color);
     }
 }
 
@@ -87,4 +89,10 @@ a {
     img {
         width: 100%;
     }
+}
+
+/* Netlify form at the end of the index page */
+.form-control {
+    background-color: var(--card-color);
+    border: var(--card-color);
 }

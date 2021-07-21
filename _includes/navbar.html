@@ -2,7 +2,7 @@
     <div class="nav-content">
         <a href="{{ '/' | relative_url }}">
             <div class="nav-logo">
-                <img src="./assets/img/logo.svg" />
+                <img src="./assets/img/logo.svg" alt="{{ site.title }}" />
             </div>
         </a>
       <div class="nav-links">
@@ -22,5 +22,14 @@
         </a>
       </nav>
     </div>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-switcher">
+                <input type="checkbox" id="theme-switcher" />
+                <div class="slider round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
+        </div>
+
     </div>
 </header>
