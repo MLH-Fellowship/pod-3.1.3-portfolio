@@ -10,7 +10,7 @@ h2 {
 }
 
 body {
-    background-color:var(--body-light-white) !important;
+    background-color:var(--body-color) !important;
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
@@ -20,7 +20,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: var(--banner-light-blue);
+    background-color: var(--banner-background-color);
 }
 
 .banner .logo {
@@ -31,7 +31,7 @@ body {
 }
 
 .banner .title {
-    color: var(--white);
+    color: var(--title-color);
     font-size: 50px;
     font-weight: 700;
 }
@@ -44,61 +44,61 @@ body {
 .page h1 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 0.5em;
 }
 
 .page h3 {
     font-weight: 600 !important;
     text-align: left !important;
-    color: var(--black);
+    color: var(--text-color);
     font-size: 1.3rem;
 }
 
 .page h4 {
     font-weight: 600 !important;
     text-align: center !important;
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .page p {
-    color: var(--black);
+    color: var(--text-color);
     font-weight: 500;
 }
 
 .page td {
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .page th {
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .page li {
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .page a {
-    color: var(--a-light-blue);
+    color: var(--page-color);
 }
 
 .page a:hover {
-    color: var(--a-light-blue);
+    color: var(--page-color);
 }
 
 .page code {
-    color: var(--code-light-blue);
+    color: var(--page-code-color);
 }
 
 hr {
-    background-color: var(--black);
+    background-color: var(--text-color);
     padding: 1px;
     margin-top: 1em !important;
     margin-bottom: 1em !important;
@@ -119,7 +119,7 @@ hr {
     }
 
     .banner .title {
-        color: var(--white);
+        color: var(--title-color);
         font-size: 30px;
         font-weight: 700;
     }

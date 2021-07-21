@@ -1,14 +1,14 @@
 
 
 .profile {
-    background-color: var(--banner-light-blue) !important;
+    background-color: var(--banner-background-color) !important;
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
     h1 {
         font-size: 50px;
         font-weight: 700;
-        color: var(--white);
+        color: var(--title-color);
     }
     
     img {
