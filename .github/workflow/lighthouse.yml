@@ -1,0 +1,14 @@
+name: CI
+on: [push]
+jobs:
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install -g @lhci/cli@0.8.x
+      - run: apt-get install ruby-full build-essential zlib1g-dev
+      - run: gem install jekyll bundler
+      - run: bundle install
+      - run: jekyll build
+      - run: lhci autorun
