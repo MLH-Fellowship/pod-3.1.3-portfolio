@@ -1,18 +1,56 @@
 <h2>Projects</h2>
 <div class="card-container">
     {% for item in site.data.projects %}
-    {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
-    {% else %}
-    <a>
-    {% endif %}
-      <div class="card">
-        <div class="info">
+      
+      <div id="project-card" class="card">
+        <div class="info project-info">
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>
           <p class="dates">{{ item.date }}</p>
+          <button class="project-button">Read more..</button>
         </div>
       </div>
     </a>
+
+    <div id="overlay-card" class="card full">
+        <div class="info">
+          <span class="close">&times;</span>
+          <p class="title">{{ item.title }}</p>
+          <p class="location">{{ item.event }}</p>
+          <p class="dates">{{ item.date }}</p>
+          <p class="summary">{{ item.summary }}</p>
+          <button><a class="button-link" href="/projects/{{ item.page-name }}">Read More</a></button>
+        </div>
+    </div>
+
     {% endfor %}
   </div>
+
+  <!-- Script for managing the  -->
+  <script>
+    var modal = document.getElementById("overlay-card");
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("project-button")[0];
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
