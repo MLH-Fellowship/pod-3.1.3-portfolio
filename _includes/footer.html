@@ -1,17 +1,29 @@
-<div>
-  {% if site.github_username %}
-    <div class="profile-picture">
-        <img src="./assets/img/social/twitter.png" />
+<div class="footer d-flex flex-column">
+  <h1>Follow me</h1>
+  <div class="d-flex justify-content-center">
+    {% if site.github_username %}
+    <div class="social-image">
+        <a href="https://github.com/{{site.github_username}}">
+            <img  src="./assets/img/social/github.png" />
+        </a>
     </div>
-  {% endif %}
-  {% if site.twitter_username %}
-    <div class="profile-picture">
-        <img src="./assets/img/social/twitter.png" />
+
+    {% endif %} 
+    {% if site.twitter_username %}
+    <div class="social-image"> 
+        <a href="https://twitter.com/{{site.twitter_username}}">
+            <img  src="./assets/img/social/twitter.png" />
+        </a>
     </div>
-  {% endif %}
-  {% if site.linkedin_username %}
-    <div class="profile-picture">
-        <img src="./assets/img/social/twitter.png" />
+
+    {% endif %} 
+    {% if site.linkedin_username %}
+    <div class="social-image">
+        <!-- This needs to be changed when used as a template to https://www.linkedin.com/in/ -->
+        <a href="https://www.linkedin.com/company/{{site.linkedin_username}}">
+            <img src="./assets/img/social/linkedin.png"
+        /></a>
     </div>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>
