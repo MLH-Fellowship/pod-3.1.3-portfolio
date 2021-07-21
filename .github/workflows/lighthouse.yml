@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g @lhci/cli@0.8.x
       - run: sudo apt-get install ruby-full build-essential zlib1g-dev
-      - run: gem install jekyll bundler
-      - run: bundle install
+      - run: sudo gem install jekyll bundler
+      - run: sudo bundle install
       - run: jekyll build
       - run: lhci autorun
