@@ -1,6 +1,20 @@
-<div id="projects">
+<script>
+  function openModal(title) {
+      // selects the modal with the corresponding title
+      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
+      modal.style.display = "block";
+  }
+  function closeModal(title) {
+      // selects the modal with the corresponding title
+      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
+      modal.style.display = "none";
+  }
+
+</script>
+<div id="Projects">
   <h2>Projects</h2>
-<div class="card-container">
+
+  <div class="card-container">
     {% for item in site.data.projects %}
 
       <div class="card" data-title="{{ item.title }}">
@@ -13,8 +27,8 @@
       </div>
     </a>
 
-    <div class="card full overlay-card" data-title="{{ item.title }}">
-        <div class="info">
+    <div class="overlay-card" data-title="{{ item.title }}">
+        <div class="info overlay-info">
           <button class="button-close close" onclick="closeModal('{{ item.title }}')">&times;</button>
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>
@@ -27,3 +41,4 @@
     {% endfor %}
   </div>
 </div>
+
