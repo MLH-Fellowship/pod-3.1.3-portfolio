@@ -1,4 +1,4 @@
-name: CI
+name: Lighthouse
 on:
   pull_request:
     branches:
@@ -8,8 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
+      - name: Use Node.js 10.x
         uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
       - name: Install ruby and jekyll
         run: |
           sudo apt-get install ruby-full build-essential zlib1g-dev
