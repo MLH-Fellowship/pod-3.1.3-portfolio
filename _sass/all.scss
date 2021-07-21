@@ -31,7 +31,7 @@
 
 
 body {
-    background-color: var(--body-light-white);
+    background-color: var(--body-color);
     margin-bottom: 50px;
 }
 
@@ -47,14 +47,14 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: var(--white);
+    background-color: var(--title-color);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
 }
 
 a {
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .info {
