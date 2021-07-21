@@ -1,0 +1,23 @@
+<div>
+    <button onclick="topFunction()" id="btnTop" title="Go to top">&uarr; Top</button>
+</div>
+
+<script>
+
+    var btn = $('#btnTop');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+</script>
