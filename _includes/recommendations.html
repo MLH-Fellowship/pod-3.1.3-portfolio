@@ -1,0 +1,16 @@
+<h2>Recommendations</h2>
+<div class="card-container">
+    {% for item in site.data.recommendations %}
+    <div class="card full">
+      <div class="icon">
+        <img src="./assets/img/recommendations/{{ item.logo }}">
+      </div>
+      <div class="info">
+        <p class="title">{{ item.title }}</p>
+        <p class="location">{{ item.author }}</p>
+        <p class="text">{{ item.text }}</p>
+        <button><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">View more on LinkedIn</a></button>
+      </div>
+    </div>
+    {% endfor %}
+    </div>
