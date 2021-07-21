@@ -8,10 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g @lhci/cli@0.8.x
-      - run: sudo apt-get install ruby-full build-essential zlib1g-dev
-      - run: sudo gem install jekyll bundler
-      - run: sudo bundle install
-      - run: sudo bundle exec jekyll build
-      - run: lhci autorun
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+      - name: Install ruby and jekyll
+        run: |
+          sudo apt-get install ruby-full build-essential zlib1g-dev
+          sudo gem install jekyll bundler
+      - name: Install site packages
+        run: |
+          sudo bundle install
+          sudo bundle exec jekyll build
+      - name: run Lighhouse CI
+        run: |
+          npm install -g @lhci/cli@0.8.x
+          lhci autorun
