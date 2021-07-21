@@ -3,7 +3,8 @@ email: fellowship@mlh.io
 description: >- # this means to ignore newlines until "baseurl:"
   This is my portfolio website!
 baseurl: "/" 
-url: "/" 
+url: "/"
+# You only need to define your social links here and no need to edit the footer.html
 social:
   twitter_username: mlhacks
   github_username:  mlh-fellowship
