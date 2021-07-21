@@ -1,11 +1,11 @@
 <h2>Work Experience</h2>
-<div class="container">
+<div class="container" id="experience">
   <div class="row">
     {% for item in site.data.experience %}
     <div class="col">
       <div class="card">
         <div class="icon">
-          <img src="./assets/img/experience/{{ item.logo }}">
+          <img src="./assets/img/experience/{{ item.logo }}" />
         </div>
         <div class="info">
           <p class="title">{{ item.role }}</p>
@@ -13,7 +13,7 @@
           <p class="dates">{{ item.dates }}</p>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </div>

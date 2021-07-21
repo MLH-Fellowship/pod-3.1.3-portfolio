@@ -1,0 +1,28 @@
+name: Lighthouse
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Install ruby and jekyll
+        run: |
+          sudo apt-get install ruby-full build-essential zlib1g-dev
+          sudo gem install jekyll bundler
+      - name: Install site packages
+        run: |
+          sudo bundle install
+          sudo bundle exec jekyll build
+      - name: run Lighhouse CI
+        run: |
+          sudo npm install -g @lhci/cli@0.8.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
