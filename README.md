@@ -75,7 +75,7 @@ layout: page
 
 ## Development
 
-If you want to test it locally or add some new features, run the commands below. Make sure to have [Ruby](https://www.ruby-lang.org/en/downloads/ "Ruby Installation") and Bundler (**gem install bundler**) installed.
+If you want to test it locally or add some new features, run the commands below. Make sure to have [Ruby](https://www.ruby-lang.org/en/downloads/ "Ruby Installation") and Bundler (```gem install bundler``) installed.
 
 ```
 bundle install --path vendor/bundle
