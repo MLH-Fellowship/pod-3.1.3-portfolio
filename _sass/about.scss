@@ -36,8 +36,11 @@
        .github-stat{
          display:flex;
          justify-content: space-around;
-        margin: 50px 10px 0 10px;
+         img{
+          margin: 50px 10px 0 10px;
+         }
        }
+      
     }
     .left {
         padding-top: 20px;
