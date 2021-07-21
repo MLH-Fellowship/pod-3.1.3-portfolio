@@ -32,7 +32,7 @@
 
 
 body {
-    background-color: var(--body-light-white);
+    background-color: var(--body-color);
     margin-bottom: 50px;
 }
 
@@ -48,14 +48,14 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: var(--white);
+    background-color: var(--card-color);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
 }
 
 a {
-    color: var(--black);
+    color: var(--link-colo);
 }
 
 .info {
@@ -77,7 +77,7 @@ a {
 
     .dates {
         font-size: small;
-        color: var(--font-light-black);
+        color: var(--dates-color);
     }
 }
 
@@ -90,4 +90,10 @@ a {
     img {
         width: 100%;
     }
+}
+
+/* Netlify form at the end of the index page */
+.form-control {
+    background-color: var(--card-color);
+    border: var(--card-color);
 }
