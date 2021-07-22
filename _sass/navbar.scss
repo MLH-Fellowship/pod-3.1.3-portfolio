@@ -1,42 +1,41 @@
-
 .nav-bar {
-    width: 100%;
-    display: inline-block;
-    background-color: var(--banner-background-color);
-    font-family: "Poppins", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: var(--banner-background-color);
+  font-family: "Poppins", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
 }
 
 .nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+  display: inline-flex;
+  height: 60%;
+  width: 350px;
 }
 
 .nav-content {
-    height: 60px;
+  height: 60px;
 }
 
 .nav-logo {
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 45%;
-    margin-right: auto;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  margin-right: auto;
 }
 
 .nav-logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .nav-content nav {
-    display: inline;
-    width: 100%;
-    text-align: right;
-    padding-left: 4%;
-    padding-right: 2%;
+  display: inline;
+  width: 100%;
+  text-align: right;
+  padding-left: 5%;
+  padding-right: 2%;
 }
 
 .nav-content nav a {
@@ -54,6 +53,7 @@
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  padding-left: 5%;
   color: white;
   background-color: var(--banner-background-color);
 
@@ -70,7 +70,7 @@
 }
 
 .theme-switch input {
-  display:none;
+  display: none;
 }
 
 .slider {
@@ -81,7 +81,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -91,7 +91,7 @@
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 26px;
 }
 
