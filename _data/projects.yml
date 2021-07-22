@@ -2,6 +2,7 @@
   event: MLH Fellowship Pre Fellowship Project
   date: Summer 2021  - Batch 3.5
   page-name: project
+  id: 1 
   summary: >- # This means to ignore newlines until the next attribute. This summary is used for the overlay card content. 
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
