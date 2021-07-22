@@ -13,6 +13,13 @@
     /* page colors (See page.scss) **/
     --page-color: #0f90fe;
     --page-code-color: #17a2b8;
+
+    /* breakpoints (See mixins.scss) */
+    --xs: 640px;
+    --sm: 768px;
+    --md: 1024px;
+    --lg: 1280px;
+    --xl: 1800px;
 }
 
 [data-theme="dark"] {
