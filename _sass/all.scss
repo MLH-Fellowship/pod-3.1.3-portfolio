@@ -3,6 +3,7 @@
 @import "navbar";
 @import "profile";
 @import "page";
+@import "card";
 
 /* Screen sizes are divided into six groups 
   1. Mobile Potraits: (less than 640px)
@@ -47,72 +48,8 @@ h2 {
   text-align: center;
 }
 
-.card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 30px;
-  background-color: var(--card-color);
-  border-radius: 0.375rem;
-  padding: 1.5em;
-  font-size: 1.2em;
-  text-align: center;
-}
-
 a {
   color: var(--link-colo);
-}
-
-/* Full Width Card CSS */
-
-.card.full {
-  .icon {
-    width: 50%;
-    height: auto;
-
-    img {
-      border-radius: 50%;
-    }
-  }
-
-  .info {
-    padding: 2.5%;
-
-    .location {
-      margin: 2.5% 0;
-    }
-  }
-}
-
-/* Card Info CSS */
-
-.info {
-  p {
-    margin-top: 5px;
-    margin: 0px;
-    text-align: left;
-  }
-
-  .title {
-    font-size: 500;
-    font-weight: bold;
-  }
-
-  .location {
-    font-size: medium;
-    font-weight: 400;
-  }
-
-  .text {
-    font-size: medium;
-    font-weight: 300;
-  }
-
-  .dates {
-    font-size: small;
-    color: var(--dates-color);
-  }
 }
 
 .icon {
