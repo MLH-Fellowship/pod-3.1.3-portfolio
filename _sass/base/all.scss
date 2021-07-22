@@ -1,0 +1,34 @@
+/* Global CSS */
+
+body {
+  background-color: var(--body-color);
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+a {
+  color: var(--link-colo);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  padding: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* Netlify form at the end of the index page */
+.form-control {
+  background-color: var(--card-color);
+  border: var(--card-color);
+}

@@ -1,0 +1,29 @@
+/* Screen sizes are divided into six groups 
+  1. Mobile Potraits: (less than 640px)
+  2. Mobile landscape: (more than or equal to 640px)
+  3. Tablet portrait: (more than or equal to 768px)
+  4. Tablet landscape: (more than or equal to 1024px) 
+  5. Desktop: (more than or equal to 1280)
+  6. Big Desktop: (more than or equal to 1800px)
+
+  General guideline is to:
+  - We don't support mobile screen widths less than 300px
+  - Design for mobile first (there isn't a breakpoint defined for mobile potraits)
+  - Customize design for bigger screen sizes using media queries
+*/
+
+@mixin for-mobile-landscape {
+  @media (min-width: var(--xs)) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: var(--sm)) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: var(--md)) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: var(--lg)) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: var(--xl)) { @content; }
+}

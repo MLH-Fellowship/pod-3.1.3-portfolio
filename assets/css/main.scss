@@ -1,37 +1,16 @@
 ---
 ---
+/* Define mixins and variables first so they can be used in all other files */
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import 'all';
-:root {
-    /* text colors (Title, Text, Links, Dates) */
-    --title-color: white;
-    --text-color: black;
-    --link-color: black;
-    --dates-color: #404040;
+/* Use base/font for all your font imports */
+@import 'base/fonts';
+/* Use base/all for global css */
+@import 'base/all';
 
-    /* background colors (Body, Cards, Banner)*/
-    --body-color: #f5f5f9;
-    --card-color: white;
-    --banner-background-color: #1C539F;
+@import 'layout/page';
+@import 'layout/navbar';
 
-    /* page colors (See page.scss) **/
-    --page-color: #0f90fe;
-    --page-code-color: #17a2b8;
-  }
-
-[data-theme="dark"] {
-    /* text colors (Title, Text, Links, Dates) */
-    --title-color: black;
-    --text-color: white;
-    --link-color: white;
-    --dates-color: #3d3d3d;
-
-    /* background colors (Body, Cards, Banner, Form)*/
-    --body-color: #727279;
-    --card-color: gray;
-    --banner-background-color: #0e294e;
-
-    /* page colors (See page.scss) **/
-    --page-color: #0f90fe;
-    --page-code-color: #17a2b8;
-}
+@import 'components/card';
+@import 'components/profile';
