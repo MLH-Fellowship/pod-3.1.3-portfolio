@@ -1,37 +1,12 @@
 ---
 ---
+@import 'abstracts/mixins.scss';
+@import 'abstracts/variables.scss';
 
 @import 'all';
-:root {
-    /* text colors (Title, Text, Links, Dates) */
-    --title-color: white;
-    --text-color: black;
-    --link-color: black;
-    --dates-color: #404040;
 
-    /* background colors (Body, Cards, Banner)*/
-    --body-color: #f5f5f9;
-    --card-color: white;
-    --banner-background-color: #1C539F;
+@import 'layout/page.scss';
+@import 'layout/navbar.scss';
 
-    /* page colors (See page.scss) **/
-    --page-color: #0f90fe;
-    --page-code-color: #17a2b8;
-  }
-
-[data-theme="dark"] {
-    /* text colors (Title, Text, Links, Dates) */
-    --title-color: black;
-    --text-color: white;
-    --link-color: white;
-    --dates-color: #3d3d3d;
-
-    /* background colors (Body, Cards, Banner, Form)*/
-    --body-color: #727279;
-    --card-color: gray;
-    --banner-background-color: #0e294e;
-
-    /* page colors (See page.scss) **/
-    --page-color: #0f90fe;
-    --page-code-color: #17a2b8;
-}
+@import 'components/card.scss';
+@import 'components/profile.scss';

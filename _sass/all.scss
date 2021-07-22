@@ -1,38 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
-@import "navbar";
-@import "profile";
-@import "page";
-@import "card";
-
-/* Screen sizes are divided into six groups 
-  1. Mobile Potraits: (less than 640px)
-  2. Mobile landscape: (more than or equal to 640px)
-  3. Tablet portrait: (more than or equal to 768px)
-  4. Tablet landscape: (more than or equal to 1024px) 
-  5. Desktop: (more than or equal to 1280)
-  6. Big Desktop: (more than or equal to 1800px)
-
-  General guideline is to:
-  - Design for mobile first (there isn't a breakpoint defined for mobile potraits)
-  - Customize design for bigger screen sizes using media queries
-*/
-
-@mixin for-mobile-landscape {
-  @media (min-width: 640px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 768px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 1024px) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1280px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
-}
 
 /* Global CSS */
 
