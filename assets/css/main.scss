@@ -1,10 +1,13 @@
 ---
 ---
+/* Define mixins and variables first so they can be used in all other files */
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
-@import 'base/all';
+/* Use base/font for all your font imports */
 @import 'base/fonts';
+/* Use base/all for global css */
+@import 'base/all';
 
 @import 'layout/page';
 @import 'layout/navbar';
