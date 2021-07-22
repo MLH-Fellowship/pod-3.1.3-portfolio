@@ -29,7 +29,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{ item.title }}</h5>
           <button
             type="button"
             class="close"
@@ -40,9 +40,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">About the project</p>
+          <h5 class="location">{{ item.event }}</h5>
           <p class="summary">{{ item.summary }}</p>
         </div>
         <div class="modal-footer">
