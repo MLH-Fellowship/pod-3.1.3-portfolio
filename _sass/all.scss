@@ -3,6 +3,7 @@
 @import "navbar";
 @import "profile";
 @import "page";
+@import 'projects'; 
 
 /* Global CSS */
 
@@ -101,7 +102,4 @@ a {
 .form-control {
   background-color: var(--card-color);
   border: var(--card-color);
-}
-.modal-footer-icons{
-  width:30% !important;
 }
