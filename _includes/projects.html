@@ -1,28 +1,19 @@
-<script>
-  function openModal(title) {
-      // selects the modal with the corresponding title
-      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
-      modal.style.display = "block";
-  }
-  function closeModal(title) {
-      // selects the modal with the corresponding title
-      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
-      modal.style.display = "none";
-  }
-
-</script>
-<div id="Projects">
-  <h2>Projects</h2>
-
-  <div class="card-container">
+<h2>Projects</h2>
+<div class="container" id="projects">
+  <div class="row">
     {% for item in site.data.projects %}
-
-      <div class="card" data-title="{{ item.title }}">
-        <div class="info project-info">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
-          <button class="project-button" onclick="openModal('{{ item.title }}')">Read more..</button>
+    <div class="col">
+      <a
+        data-toggle="modal"
+        data-target="#exampleModal{{ item.id }}"
+        style="cursor: grab"
+      >
+        <div class="card">
+          <div class="info">
+            <p class="title text-center">{{ item.title }}</p>
+            <p class="location text-center">{{ item.event }}</p>
+            <p class="dates text-center">{{ item.date }}</p>
+          </div>
         </div>
       </div>
 
@@ -33,11 +24,17 @@
           <p class="location">{{ item.event }}</p>
           <p class="dates">About the project</p>
           <p class="summary">{{ item.summary }}</p>
-          <button><a class="button-link" href="/projects/{{ item.page-name }}">Read More</a></button>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">
+            Close
+          </button>
+          <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
+            >Read More</a
+          >
+        </div>
+      </div>
     </div>
-
-    {% endfor %}
   </div>
+  {% endfor %}
 </div>
-
