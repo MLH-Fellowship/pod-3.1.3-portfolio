@@ -3,11 +3,11 @@
   <div class="row">
     {% for item in site.data.projects %}
     <div class="col">
-      {% if item.page-name %}
-      <a href="/projects/{{ item.page-name }}"></a>
-      {% else %}
-      <a>
-        {% endif %}
+      <a
+        data-toggle="modal"
+        data-target="#exampleModal{{ item.id }}"
+        style="cursor: grab"
+      >
         <div class="card">
           <div class="info">
             <p class="title text-center">{{ item.title }}</p>
@@ -17,50 +17,54 @@
         </div>
       </a>
     </div>
-    </div>
-    <div class="overlay-card" data-title="{{ item.title }}">
-      <div class="info overlay-info">
-        <button class="button-close close" onclick="closeModal('{{ item.title }}')">&times;</button>
-        <p class="title">{{ item.title }}</p>
-        <p class="location">{{ item.event }}</p>
-        <p class="dates">About the project</p>
-        <p class="summary">{{ item.summary }}</p>
-        <button><a class="button-link" href="/projects/{{ item.page-name }}">Read More</a></button>
-      </div>
   </div>
-    </div>  
-<script>
-  function openModal(title) {
-      // selects the modal with the corresponding title
-      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
-      modal.style.display = "block";
-  }
-  function closeModal(title) {
-      // selects the modal with the corresponding title
-      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
-      modal.style.display = "none";
-  }
-
-</script>
-<div id="Projects">
-  <h2>Projects</h2>
-
-  <div class="card-container">
-    {% for item in site.data.projects %}
-
-      <div class="card" data-title="{{ item.title }}">
-        <div class="info project-info">
+  <!-- <div class="overlay-card" data-title="{{ item.title }}">
+    <div class="info overlay-info">
+      <button class="button-close close" onclick="closeModal('{{ item.title }}')">&times;</button>
+      <p class="title">{{ item.title }}</p>
+      <p class="location">{{ item.event }}</p>
+      <p class="dates">About the project</p>
+      <p class="summary">{{ item.summary }}</p>
+      <button><a class="btn btn-primary" href="/projects/{{ item.page-name }}">Read More</a></button>
+    </div>
+  </div> -->
+  <div
+    class="modal fade"
+    id="exampleModal{{ item.id }}"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
-          <button class="project-button" onclick="openModal('{{ item.title }}')">Read more..</button>
+          <p class="dates">About the project</p>
+          <p class="summary">{{ item.summary }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">
+            Close
+          </button>
+          <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
+            >Read More</a
+          >
         </div>
       </div>
-    </a>
-
-    
-
-    {% endfor %}
+    </div>
   </div>
+  {% endfor %}
 </div>
-

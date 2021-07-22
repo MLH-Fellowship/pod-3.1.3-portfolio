@@ -14,21 +14,18 @@
         <h4><strong>Hello there!</strong></h4>
         <p class="name">&ensp;{{item.bio1}}</p>
       </div>
-      {% endfor %}
     </div>
-    <div class="child right">
-      <div class="bio">
-        <h1>Hello there!</h1>
-        <p class="name">&ensp;{{item.bio1}}</p>
-      </div>
-      <div class="github-stat">
-        <img
-          alt="Github stats"
-          src="https://github-readme-stats.vercel.app/api?username={{site.github_username}}&show_icons=true&theme=default"
-        />
+    <div class="row py-5">
+      <div class="col-xs">
         <img
           alt="Most used languages on github"
           src="https://github-readme-stats.vercel.app/api/top-langs/?username={{site.github_username}}&langs_count=4"
+        />
+      </div>
+      <div class="col-xl m-5">
+        <img
+          alt="Github stats"
+          src="https://github-readme-stats.vercel.app/api?username={{site.github_username}}&show_icons=true&theme=default"
         />
       </div>
     </div>
