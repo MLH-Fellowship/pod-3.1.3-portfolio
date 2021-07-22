@@ -45,42 +45,41 @@
           <p class="dates">About the project</p>
           <p class="summary">{{ item.summary }}</p>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer d-flex justify-content-between">
           
-          <div style="justify-content: left; margin-right: 10em; width: 25%;">
-            <div style="display: flex; justify-content: space-between;" class="modal-footer-icons">
+          <div class="d-flex justify-content-around modal-footer-icons">
+           
               <!-- Check if the links exist and then add them -->
               {% if item.github %}
                 <!-- Github link -->
-                <a href="{{item.github}}">
+                <a href="{{item.github}}" data-toggle="tooltip" data-placement="top" title="Github Link">
                   <i class="fa fa-github" style="font-size:32px"></i>
                 </a>
               {% endif %}
 
               {% if item.external_link %}
                 <!-- Website Link -->
-                <a href="{{item.external_link}}">
+                <a href="{{item.external_link}}" data-toggle="tooltip" data-placement="top" title="Deployed Site">
                   <i class="fas fa-external-link-alt" style="font-size:32px"></i>
                 </a>
               {% endif %}
 
               {% if item.video_demo %}
                 <!-- Video Demo Link -->
-                <a href="{{item.video_demo}}">
+                <a href="{{item.video_demo}}" data-toggle="tooltip" data-placement="top" title="Video Preview">
                   <i class="fas fa-video" style="font-size:32px"></i>
                 </a>
               {% endif %}
 
-            </div>
+            
           </div>
-        
+        <div>
           <button type="button" class="btn btn-primary" data-dismiss="modal">
             Close
           </button>
           <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
-            >Read More</a
-          >
-
+            >Read More</a>
+          </div>
         </div>
       </div>
     </div>

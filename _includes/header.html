@@ -49,6 +49,10 @@
           // Set the new color theme
           document.documentElement.setAttribute("data-theme", switchToTheme);
         }
+        //initialization for the tooltip
+        $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
       });
     </script>
 </head>
