@@ -13,6 +13,7 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. This will
 * Links to your Twitter, GitHub and LinkedIn
 * Dark mode
 * Lighthouse Automated Auditing
+* Sweet UI :sunglasses:
 
 ## Directory strucure
 
@@ -80,7 +81,7 @@ Recommendation example.
 ```yaml
 - title: HackTheMidlands
   author: Robbie
-  text: MLH Fellowship
+  text: Top Zoom Host
   date: Summer 2021
 ```
 ## Add project posts
@@ -134,3 +135,4 @@ bundle config set --local path 'vendor/bundle'
 bundle install
 bundle exec jekyll serve --livereload
 ```
+note: If flag --livereload might give you an error. Don't use it then.
