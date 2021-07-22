@@ -1,17 +1,19 @@
-<div id="education">
-  <h2>Education</h2>
-  <div class="card-container">
-      {% for item in site.data.education %}
+<h2>Education</h2>
+<div class="container" id="education">
+  <div class="row">
+    {% for item in site.data.education %}
+    <div class="col">
       <div class="card">
         <div class="icon">
-          <img src="./assets/img/education/{{ item.logo }}" alt="{{ item.institute }}">
+          <img src="./assets/img/education/{{ item.logo }}" />
         </div>
         <div class="info">
-          <p class="title">{{ item.course }}</p>
-          <p class="location">{{ item.institute }}</p>
-          <p class="dates">{{ item.dates }}</p>
+          <p class="title text-center">{{ item.course }}</p>
+          <p class="location text-center">{{ item.institute }}</p>
+          <p class="dates text-center">{{ item.dates }}</p>
         </div>
       </div>
-      {% endfor %}
+    </div>
+    {% endfor %}
   </div>
 </div>
