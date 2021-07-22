@@ -21,14 +21,30 @@
 .nav-logo img {
     width: 200px;
     z-index: 1;
+    margin-top: 0;
+    padding-top: 0;
 }
 
+.navbar-toggler {
+  background-color: white;
+}
 .navbar-brand {
     position: absolute;
     left: 5%;
     margin-left: -50px !important;
     display: block;
+    margin-top: 0;
+    padding-top: 0;
 }
+
+button {
+  margin-left: 82%;
+}
+
+.navbar-collapse {
+    margin-left: 82%;
+}
+
 
 @media (min-width: 1200px) {
   .navbar-brand {
@@ -42,15 +58,10 @@
   }
 }
 
-button {
-  margin-left: 82%;
-}
-
-.collapse:not(.show) {
-    margin: auto;
-}
-.navbar-collapse {
-    margin-left: 82%;
+@media (min-width: 1200px) {
+  .navbar-collapse {
+      margin-left: auto;
+  }
 }
 
 @media (max-width: 850px) {
