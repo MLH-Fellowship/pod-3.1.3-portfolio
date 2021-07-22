@@ -21,8 +21,6 @@
 .nav-logo img {
     width: 200px;
     z-index: 1;
-    margin-top: 0;
-    padding-top: 0;
 }
 
 .navbar-toggler {
@@ -33,8 +31,6 @@
     left: 5%;
     margin-left: -50px !important;
     display: block;
-    margin-top: 0;
-    padding-top: 0;
 }
 
 button {
@@ -45,6 +41,11 @@ button {
     margin-left: 82%;
 }
 
+@media (min-width: 1200px) {
+  .navbar-collapse {
+      margin-left: auto;
+  }
+}
 
 @media (min-width: 1200px) {
   .navbar-brand {
@@ -58,18 +59,31 @@ button {
   }
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 500px) and (max-width: 590px) {
+  button {
+    margin-left: 60%;
+  }
   .navbar-collapse {
-      margin-left: auto;
+    margin-left: 60%;
   }
 }
 
-@media (max-width: 850px) {
+@media (min-width: 590px) and (max-width: 850px) {
   button {
-    margin-left: 68%;
+    margin-left: 72%;
   }
   .navbar-collapse {
-    margin-left: 68%;
+    margin-left: 72%;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+  button {
+    margin-left: 80%;
+  }
+  .navbar-collapse {
+    margin-left: 80%;
   }
 }
 
