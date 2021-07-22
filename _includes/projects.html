@@ -1,20 +1,44 @@
-<div id="projects">
+<script>
+  function openModal(title) {
+      // selects the modal with the corresponding title
+      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
+      modal.style.display = "block";
+  }
+  function closeModal(title) {
+      // selects the modal with the corresponding title
+      let modal = document.querySelector(`.overlay-card[data-title="${title}"]`);
+      modal.style.display = "none";
+  }
+
+</script>
+<div id="Projects">
   <h2>Projects</h2>
-<div class="card-container">
+
+  <div class="card-container">
     {% for item in site.data.projects %}
-    {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
-    {% else %}
-    <a>
-    {% endif %}
-      <div class="card">
-        <div class="info">
+
+      <div class="card" data-title="{{ item.title }}">
+        <div class="info project-info">
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>
           <p class="dates">{{ item.date }}</p>
+          <button class="project-button" onclick="openModal('{{ item.title }}')">Read more..</button>
         </div>
       </div>
     </a>
+
+    <div class="overlay-card" data-title="{{ item.title }}">
+        <div class="info overlay-info">
+          <button class="button-close close" onclick="closeModal('{{ item.title }}')">&times;</button>
+          <p class="title">{{ item.title }}</p>
+          <p class="location">{{ item.event }}</p>
+          <p class="dates">About the project</p>
+          <p class="summary">{{ item.summary }}</p>
+          <button><a class="button-link" href="/projects/{{ item.page-name }}">Read More</a></button>
+        </div>
+    </div>
+
     {% endfor %}
   </div>
 </div>
+

@@ -33,6 +33,14 @@
             font-size: 1.5em;
             padding-bottom: 30px;
         }
+       .github-stat{
+         display:flex;
+         justify-content: space-around;
+         img{
+          margin: 50px 10px 0 10px;
+         }
+       }
+      
     }
     .left {
         padding-top: 20px;

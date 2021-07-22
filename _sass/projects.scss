@@ -1,0 +1,87 @@
+
+.project-button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.overlay-card {
+    margin: 0 auto;
+    padding: 10%;
+    display: none;  
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    cursor: pointer; /* Add a pointer on hover */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+    .overlay-info {
+        padding: 2.5%;
+        background-color: #fefefe;
+        border: 1px solid #888;
+        border-radius: 4px;
+        position: relative;
+        
+        /* Text inside the box */
+        .location {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .dates {
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        /* The Close Button */
+        .button-close {
+            color: #000;
+            position: absolute; 
+            top: -1.25rem; 
+            right: 1rem; 
+            font-size: 30px;
+            font-weight: bold;
+            background: none!important;
+            border: none;
+            padding: 0!important;
+            cursor: pointer;
+        }
+        
+        .button-close:hover,
+        .button-close:focus {
+            color: black;
+            cursor: pointer;
+        }
+    } 
+
+        button {
+            background: #0766CA;
+            border: none;
+            border-radius: 5px;
+            margin-top: 2.5%;
+            padding: 1.25%;
+    
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }     
+        }
+
+}  
