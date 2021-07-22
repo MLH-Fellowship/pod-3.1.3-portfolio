@@ -6,6 +6,10 @@
 
 /* Global CSS */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body-color);
   margin-bottom: 50px;
