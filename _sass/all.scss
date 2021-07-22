@@ -4,6 +4,35 @@
 @import "profile";
 @import "page";
 
+/* Screen sizes are divided into six groups 
+  1. Mobile Potraits: (less than 640px)
+  2. Mobile landscape: (more than or equal to 640px)
+  3. Tablet portrait: (more than or equal to 768px)
+  4. Tablet landscape: (more than or equal to 1024px) 
+  5. Desktop: (more than or equal to 1280)
+  6. Big Desktop: (more than or equal to 1800px)
+
+  General guideline is to:
+  - Design for mobile first (there isn't a breakpoint defined for mobile potraits)
+  - Customize design for bigger screen sizes using media queries
+*/
+
+@mixin for-mobile-landscape {
+  @media (min-width: 640px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 768px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 1024px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1280px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 /* Global CSS */
 
 body {
