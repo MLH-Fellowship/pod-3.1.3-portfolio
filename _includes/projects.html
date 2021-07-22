@@ -46,12 +46,41 @@
           <p class="summary">{{ item.summary }}</p>
         </div>
         <div class="modal-footer">
+          
+          <div style="justify-content: left; margin-right: 10em; width: 25%;">
+            <div style="display: flex; justify-content: space-between;" class="modal-footer-icons">
+              <!-- Check if the links exist and then add them -->
+              {% if item.github %}
+                <!-- Github link -->
+                <a href="{{item.github}}">
+                  <i class="fa fa-github" style="font-size:32px"></i>
+                </a>
+              {% endif %}
+
+              {% if item.external_link %}
+                <!-- Website Link -->
+                <a href="{{item.external_link}}">
+                  <i class="fas fa-external-link-alt" style="font-size:32px"></i>
+                </a>
+              {% endif %}
+
+              {% if item.video_demo %}
+                <!-- Video Demo Link -->
+                <a href="{{item.video_demo}}">
+                  <i class="fas fa-video" style="font-size:32px"></i>
+                </a>
+              {% endif %}
+
+            </div>
+          </div>
+        
           <button type="button" class="btn btn-primary" data-dismiss="modal">
             Close
           </button>
           <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
             >Read More</a
           >
+
         </div>
       </div>
     </div>
