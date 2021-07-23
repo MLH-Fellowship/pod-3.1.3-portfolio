@@ -25,12 +25,15 @@
 
 .navbar-toggler {
   background-color: white;
+  float: right;
+  position: relative;
 }
 .navbar-brand {
     position: absolute;
     left: 5%;
     margin-left: -50px !important;
     display: block;
+    padding-left: 3%;
 }
 
 button {
@@ -45,13 +48,11 @@ button {
   .navbar-collapse {
       margin-left: auto;
   }
-}
-
-@media (min-width: 1200px) {
   .navbar-brand {
     left: 5%;
   }
 }
+
 
 @media (max-width: 1076px) {
   .navbar-brand {
