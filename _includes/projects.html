@@ -3,7 +3,7 @@
   <div class="row">
     {% for item in site.data.projects %}
     <div class="col">
-      <a
+      <a href="/projects/{{ item.page-name }}"
         data-toggle="modal"
         data-target="#exampleModal{{ item.id }}"
         style="cursor: grab"
