@@ -21,15 +21,15 @@
 
 [data-theme="dark"] {
     /* text colors (Title, Text, Links, Dates) */
-    --title-color: black;
+    --title-color: white;
     --text-color: white;
     --link-color: white;
-    --dates-color: #3d3d3d;
+    --dates-color: #b6b6b6;
 
     /* background colors (Body, Cards, Banner, Form)*/
-    --body-color: #727279;
-    --card-color: gray;
-    --banner-background-color: #0e294e;
+    --body-color: #303030;
+    --card-color: #232323;
+    --banner-background-color: #e3ac67;
 
     /* page colors (See page.scss) **/
     --page-color: #0f90fe;

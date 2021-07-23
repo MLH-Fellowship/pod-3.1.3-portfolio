@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link lang='sass' rel="stylesheet" href="/assets/css/main.css">
     <link rel='icon' href='/assets/img/favicon.ico' type='image/x-icon' />
@@ -22,24 +23,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://jsxss.com/assets/xss.js" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-      // Wait for document to load
-      document.addEventListener("DOMContentLoaded", function(event) {
-        document.documentElement.setAttribute("data-theme", "light");
-
-        // Get the button switcher from DOM
-        var themeSwitcher = document.getElementById("theme-switcher");
-
-        themeSwitcher.onclick = function() {
-          // Get the current color theme
-          var currentTheme = document.documentElement.getAttribute("data-theme");
-
-          // If dark, switch to light : If light, switch to dark
-          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
-
-          // Set the new color theme
-          document.documentElement.setAttribute("data-theme", switchToTheme);
-        }
-      });
-    </script>
+    <script src="/assets/js/dark-mode.js"></script>
 </head>
