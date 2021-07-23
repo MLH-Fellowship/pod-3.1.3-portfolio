@@ -17,41 +17,68 @@
         </div>
       </a>
     </div>
-    
-    <div
-      class="modal fade"
-      id="exampleModal{{ item.id }}"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
+  </div>
+  <div
+    class="modal fade"
+    id="exampleModal{{ item.id }}"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ item.title }}</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
             <p class="title">{{ item.title }}</p>
             <p class="location">{{ item.event }}</p>
             <p class="dates">About the project</p>
             <p class="summary">{{ item.summary }}</p>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          
+          <div class="d-flex justify-content-around modal-footer-icons">
+           
+              <!-- Check if the links exist and then add them -->
+              {% if item.github %}
+                <!-- Github link -->
+                <a href="{{item.github}}" data-toggle="tooltip" data-placement="top" title="Github Link">
+                  <i class="fa fa-github project-footer-icons"></i>
+                </a>
+              {% endif %}
+
+              {% if item.external_link %}
+                <!-- Website Link -->
+                <a href="{{item.external_link}}" data-toggle="tooltip" data-placement="top" title="Deployed Site">
+                  <i class="fas fa-external-link-alt project-footer-icons"></i>
+                </a>
+              {% endif %}
+
+              {% if item.video_demo %}
+                <!-- Video Demo Link -->
+                <a href="{{item.video_demo}}" data-toggle="tooltip" data-placement="top" title="Video Preview">
+                  <i class="fas fa-video project-footer-icons"></i>
+                </a>
+              {% endif %}
+
+            
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close
-            </button>
-            <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
-              >Read More</a
-            >
+        <div>
+          <button type="button" class="btn btn-primary project-close-btn" data-dismiss="modal">
+            Close
+          </button>
+          <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
+            >Read More</a>
           </div>
         </div>
       </div>
