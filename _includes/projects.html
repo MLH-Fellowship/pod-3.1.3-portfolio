@@ -46,7 +46,6 @@
             <p class="summary">{{ item.summary }}</p>
         </div>
         <div class="modal-footer d-flex justify-content-between">
-          
           <div class="d-flex justify-content-around modal-footer-icons">
            
               <!-- Check if the links exist and then add them -->
@@ -73,13 +72,14 @@
 
             
           </div>
-        <div>
-          <button type="button" class="btn btn-primary project-close-btn" data-dismiss="modal">
-            Close
-          </button>
-          <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
-            >Read more about {{ item.title }}</a
-          >
+          <div>
+            <button type="button" class="btn btn-primary project-close-btn" data-dismiss="modal">
+              Close
+            </button>
+            <a href="/projects/{{ item.page-name }}" class="btn btn-secondary">
+              Read more about {{ item.title }}
+            </a>
+          </div>
         </div>
       </div>
     </div>
