@@ -40,8 +40,10 @@
           </button>
         </div>
         <div class="modal-body">
-          <h5 class="location">{{ item.event }}</h5>
-          <p class="summary">{{ item.summary }}</p>
+            <p class="title">{{ item.title }}</p>
+            <p class="location">{{ item.event }}</p>
+            <p class="dates">About the project</p>
+            <p class="summary">{{ item.summary }}</p>
         </div>
         <div class="modal-footer d-flex justify-content-between">
           
@@ -81,6 +83,6 @@
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
