@@ -34,7 +34,7 @@
     left: 5%;
     margin-left: -50px !important;
     display: block;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 
 button {
@@ -61,6 +61,19 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  .navbar-brand {
+    margin-left: 10%;
+    padding-left: 5%;
+  }
+  button {
+    margin-left: 30%;
+  }
+  .navbar-collapse {
+    margin-left: 30%;
+  }
+
+}
 
 @media (min-width: 500px) and (max-width: 590px) {
   button {
@@ -90,6 +103,7 @@ button {
 }
 
 /* Dark Mode toggle */
+
 .theme-switch-wrapper {
   display: flex;
   align-items: center;

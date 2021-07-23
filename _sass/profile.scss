@@ -1,35 +1,105 @@
-.profile {
+.home {
   background-color: var(--banner-background-color) !important;
-  text-align: center;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: var(--title-color);
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    height: 320px;
+    margin-bottom: 50px;
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--title-color);
+    }
+
+    img {
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 20px;
+    }
+
+    .profile-picture {
+        margin-bottom: 30px;
+        height: 200px;
+        z-index: 1;
+    }
+
+    .download {
+      color: var(--title-color);
+      outline: none;
+      background: transparent;
+      border: none;
+      margin-left: 0;
+  }
+}
+
+/* Background Animation */
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px darken(#0040C1, 8%);
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+
+  &:nth-child(2n) {
+    border-color: lighten(#0040C1, 10%);
   }
 
-  img {
-    border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 20px;
+  &:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
   }
 
-  .profile-picture {
-    margin-bottom: 30px;
-    height: 200px;
+  &:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
   }
 
-  .download {
-    display: inline-block;
-    color: var(--title-color);
-    outline: none;
-    background: transparent;
-    border: none;
-    margin: auto;
+  &:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  &:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
   }
 }
