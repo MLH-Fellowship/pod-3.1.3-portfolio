@@ -1,22 +1,22 @@
-<h2>Recommendations</h2>
-<div class="container">
-  {% for item in site.data.recommendations %}
-  <div class="card full">
-    <div class="icon">
-      <img src="./assets/img/recommendations/{{ item.logo }}" />
+  <h2>Recommendations</h2>
+  <div class="container" id="recommendations">
+    {% for item in site.data.recommendations %}
+    <div class="card full">
+      <div class="icon">
+        <img src="./assets/img/recommendations/{{ item.logo }}" />
+      </div>
+      <div class="info">
+        <p class="title text-center">{{ item.title }}</p>
+        <p class="location text-center">{{ item.author }}</p>
+        <p class="text text-center">{{ item.text }}</p>
+        <a
+          href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary my-3"
+          >View more on LinkedIn</a
+        >
+      </div>
     </div>
-    <div class="info">
-      <p class="title text-center">{{ item.title }}</p>
-      <p class="location text-center">{{ item.author }}</p>
-      <p class="text text-center">{{ item.text }}</p>
-      <a
-        href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-primary my-3"
-        >View more on LinkedIn</a
-      >
-    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
-</div>

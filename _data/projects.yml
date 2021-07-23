@@ -2,10 +2,14 @@
   event: MLH Fellowship Pre Fellowship Project
   date: Summer 2021  - Batch 3.5
   page-name: project
+  
+  # Optional links
+  github: https://github.com/
+  external_link: https://github.com/
+  video_demo: https://github.com/
+  
   id: 1
-  summary: >- # This means to ignore newlines until the next attribute
-
-
+  summary: >- # This means to ignore newlines until the next attribute. This summary is used for the overlay card content. 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -16,6 +20,12 @@
   event: MLH Fellowship Pre Fellowship Project
   date: Summer 2021  - Batch 3.5
   page-name: project
+
+  # Optional links
+  github: https://github.com/
+  external_link: 
+  video_demo: https://github.com/
+
   id: 2
   summary: >- # This means to ignore newlines until the next attribute
 
