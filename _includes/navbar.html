@@ -1,5 +1,12 @@
 <header class="nav-bar">
   <div class="nav-content">
+    <div class="switch">
+      <input type="checkbox" class="switch__input ml-5" id="Switch">
+      <label class="switch__label" for="Switch">
+          <span class="switch__indicator"></span>
+          <span class="switch__decoration"></span>
+      </label>
+  </div>
     <a href="{{ '/' | relative_url }}">
       <div class="nav-logo">
         <img src="./assets/img/logo.svg" alt="{{ site.title }}" />
@@ -15,13 +22,7 @@
       <nav>
         <a href="#education"> Education </a>
       </nav>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="theme-switcher">
-            <input type="checkbox" id="theme-switcher" />
-            <div class="slider round"></div>
-      </label>
-
-    </div>
+      
     </div>
 
 
