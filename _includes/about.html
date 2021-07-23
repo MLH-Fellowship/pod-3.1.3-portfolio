@@ -1,22 +1,41 @@
-<h2> About</h2>
-<div class="about-section">
-    {% for item in site.data.about%}
-    <div class="child left">
-    
-        <div class="info">
-            <p class="name"><b>Full Name:</b> {{item.name}}</p>
-            <p class="number"><b>Contact:</b> {{item.number}}</p>
-            <p class="email"><b>E-mail:</b> {{item.email}}</p>
-            <p class="funfact"><b>Fun Fact:</b> {{item.funfact}}</p>
+<h2>About</h2>
+<div class="container" id="about">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        {% for item in site.data.about %}
+        <div class="col-xs text-center">
+          <p><b>Full Name:</b> {{item.name}}</p>
+          <p><b>Contact:</b> {{item.number}}</p>
+          <p><b>E-mail:</b> {{item.email}}</p>
+          <p><b>Fun Fact:</b> {{item.funfact}}</p>
         </div>
-   
-    </div>
-    <div class="child right">
-        <div class="bio">
-            <h1>Hello there!</h1>
-            <p class="name">&ensp;{{item.bio1}}<br><br>&ensp;{{item.bio2}}</p>
+
+        <div class="col-xl text-center">
+          <h3><strong>Hello there!</strong></h3>
+          <p class="name">&ensp;{{item.bio1}}</p>
         </div>
-   
+      </div>
+      <br />
+      <div class="row text-center">
+        <div class="col-xs">
+          <img
+            id = "github_languages"
+            alt="Most used languages on GitHub"
+            class="img-fluid"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username={{site.github_username}}&langs_count=4&theme=default"
+          />
+        </div>
+        <div class="col-xl">
+          <img
+            id = "github_stats"
+            alt="GitHub statistics (Total Stars, Total Commits, Total PRs, Total Issues, Contributed to)"
+            class="img-fluid"
+            src="https://github-readme-stats.vercel.app/api?username={{site.github_username}}&show_icons=true&theme=default"
+          />
+        </div>
+      </div>
     </div>
     {% endfor %}
+  </div>
 </div>

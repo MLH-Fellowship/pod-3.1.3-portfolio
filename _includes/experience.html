@@ -1,17 +1,19 @@
-<div id="experience">
-  <h2>Work Experience</h2>
-  <div class="card-container">
-      {% for item in site.data.experience %}
+<h2>Work Experience</h2>
+<div class="container" id="experience">
+  <div class="row">
+    {% for item in site.data.experience %}
+    <div class="col">
       <div class="card">
         <div class="icon">
-          <img src="./assets/img/experience/{{ item.logo }}" alt="{{ item.company }}">
+          <img src="./assets/img/experience/{{ item.logo }}" alt="{{ item.company }} logo"/>
         </div>
         <div class="info">
-          <p class="title">{{ item.role }}</p>
-          <p class="location">{{ item.company }}</p>
-          <p class="dates">{{ item.dates }}</p>
+          <p class="title text-center">{{ item.role }}</p>
+          <p class="location text-center">{{ item.company }}</p>
+          <p class="dates text-center">{{ item.dates }}</p>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
+</div>

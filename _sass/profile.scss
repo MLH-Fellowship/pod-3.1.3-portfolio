@@ -1,28 +1,34 @@
-
-
 .profile {
-    background-color: var(--banner-background-color) !important;
-    text-align: center;
-    height: 320px;
-    margin-bottom: 50px;
-    h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: var(--title-color);
-    }
-    
-    img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
-    }
-    
-    .profile-picture {
-        margin-bottom: 30px;
-        height: 200px;
-    }
+  background-color: var(--banner-background-color) !important;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+
+  img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+  }
+
+  .profile-picture {
+    margin-bottom: 30px;
+    height: 200px;
+  }
+
+  .download {
+    display: inline-block;
+    color: var(--title-color);
+    outline: none;
+    background: transparent;
+    border: none;
+  }
 }

@@ -1,59 +1,98 @@
-
+.navbar {
+  background-color: var(--banner-background-color);
+}
 .nav-bar {
-    width: 100%;
-    display: inline-block;
-    background-color: var(--banner-background-color);
-    font-family: "Poppins", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: var(--banner-background-color);
+  font-family: "Poppins", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
 }
 
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
 
-.nav-content {
-    height: 60px;
-}
-
-.nav-logo {
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 45%;
-    margin-right: auto;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
 }
 
 .nav-logo img {
     width: 200px;
+    z-index: 1;
 }
 
-.nav-content nav {
-    display: inline;
-    width: 100%;
-    text-align: right;
-    padding-left: 5%;
-    padding-right: 2%;
-}
-
-.nav-content nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links {
+.navbar-toggler {
+  background-color: white;
   float: right;
-  width: 30%;
-  padding-top: 1%;
+  position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left: 5%;
+    margin-left: -50px !important;
+    display: block;
+    padding-left: 3%;
+}
+
+button {
+  margin-left: 82%;
+}
+
+.navbar-collapse {
+    margin-left: 82%;
+}
+
+@media (min-width: 1200px) {
+  .navbar-collapse {
+      margin-left: auto;
+  }
+  .navbar-brand {
+    left: 5%;
+  }
+}
+
+
+@media (max-width: 1076px) {
+  .navbar-brand {
+     left: 11%;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 590px) {
+  button {
+    margin-left: 60%;
+  }
+  .navbar-collapse {
+    margin-left: 60%;
+  }
+}
+
+@media (min-width: 590px) and (max-width: 850px) {
+  button {
+    margin-left: 72%;
+  }
+  .navbar-collapse {
+    margin-left: 72%;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+  button {
+    margin-left: 80%;
+  }
+  .navbar-collapse {
+    margin-left: 80%;
+  }
 }
 
 /* Dark Mode toggle */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  padding-left: 5%;
   color: white;
   background-color: var(--banner-background-color);
 
@@ -61,6 +100,7 @@
     margin-left: 10px;
     font-size: 1rem;
   }
+
 }
 .theme-switch {
   display: inline-block;
@@ -70,7 +110,7 @@
 }
 
 .theme-switch input {
-  display:none;
+  display: none;
 }
 
 .slider {
@@ -81,7 +121,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -91,7 +131,7 @@
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 26px;
 }
 
