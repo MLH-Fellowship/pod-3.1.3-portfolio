@@ -6,9 +6,9 @@ baseurl: "/"
 url: "/"
 # You only need to define your social links here and no need to edit the footer.html
 social:
-  twitter_username: mlhacks
-  github_username:  mlh-fellowship
-  linkedin_username: mlh-fellowship
+  twitter_username: wrussell1999
+  github_username:  wrussell1999
+  linkedin_username: wrussell1999
 
 
 sass:
