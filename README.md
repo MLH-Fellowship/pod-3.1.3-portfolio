@@ -113,7 +113,7 @@ layout: page
 ## Add your Resume
 
 Inside the folder /assets add your resume file using .pdf format.
-It should be named `resume.pdf`. It will automatically rename it to `{name surname} - resume.pdf"`!
+It should be named `resume.pdf`. It will be avaliable for download as `{name surname} - resume.pdf"`!
 
 ## Add Google Analytics
 
@@ -144,6 +144,7 @@ bundle exec jekyll serve --livereload
 ```
 note: If flag --livereload gives you an error don't use it.
 
+
 ### It should look like something like this:
 
-![template screenshot](/assets/img/template.png)
+![template screenshot](/assets/img/portfolio.png)
