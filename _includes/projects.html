@@ -3,7 +3,7 @@
   <div class="row">
     {% for item in site.data.projects %}
     <div class="col">
-      <a
+      <a href="/projects/{{ item.page-name }}"
         data-toggle="modal"
         data-target="#exampleModal{{ item.id }}"
         style="cursor: grab"
@@ -23,7 +23,7 @@
     id="exampleModal{{ item.id }}"
     tabindex="-1"
     role="dialog"
-    aria-labelledby="exampleModalLabel"
+    aria-labelledby="exampleModalLabel{{ item.id }}"
     aria-hidden="true"
   >
     <div class="modal-dialog" role="document">
@@ -78,8 +78,8 @@
             Close
           </button>
           <a href="/projects/{{ item.page-name }}" class="btn btn-secondary"
-            >Read More</a>
-          </div>
+            >Read more about {{ item.title }}</a
+          >
         </div>
       </div>
     </div>
