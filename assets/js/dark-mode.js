@@ -1,9 +1,9 @@
 // Wait for document to load
 document.addEventListener("DOMContentLoaded", function(event) {
-document.documentElement.setAttribute("data-theme", "light");
+document.documentElement.setAttribute("data-theme", "dark");
 
 // Get the button switcher from DOM
-var themeSwitcher = document.getElementById("theme-switcher");
+var themeSwitcher = document.getElementById("Switch");
 
 themeSwitcher.onclick = function() {
   // Get the current color theme
