@@ -1,6 +1,29 @@
 <div class="profile">
-    <div class="profile-picture">
-        <img src="./assets/img/logo.jpg" alt="{{ site.title }}">
-    </div>
-    <h1>{{ site.title }}</h1>
+  <div class="profile-picture">
+    <img src="./assets/img/logo.jpg" alt="{{ site.title }}" />
+  </div>
+  <h1>{{ site.title }}</h1>
+
+  {% if site.resume %}
+  <div>
+    <button
+      onclick="downloadResume('{{ site.title }} - Resume', '{{ site.resume }}')"
+      class="download"
+    >
+      Check out my Resume!
+    </button>
+  </div>
+  {% endif %}
 </div>
+
+{% if site.resume %}
+<script>
+  const downloadResume = (name, url) => {
+    var link = document.createElement("a");
+    link.href = url;
+    link.download = `${name}.pdf`;
+    link.dispatchEvent(new MouseEvent("click"));
+    link.remove();
+  };
+</script>
+{% endif %}
