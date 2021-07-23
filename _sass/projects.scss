@@ -1,19 +1,27 @@
-.modal-footer-icons{
-    width:30% !important;
-  }
+.modal-footer-icons {
+  width: 30% !important;
+}
 
 .project-footer-icons {
-    font-size:32px;
-    color: var(--banner-background-color);
+  font-size: 32px;
+  color: var(--banner-background-color);
 }
 
 .project-close-btn {
-    background-color: var(--banner-background-color);
-    border-color: var(--banner-background-color);
+  background-color: var(--banner-background-color);
+  border-color: var(--banner-background-color);
 }
 
 .project-close-btn:hover {
-    text-decoration: underline;
-    background-color: var(--banner-background-color);
-    border-color: var(--banner-background-color);
+  text-decoration: underline;
+  background-color: var(--banner-background-color);
+  border-color: var(--banner-background-color);
+}
+
+.modal-body {
+  color: black;
+}
+
+.modal-title {
+  color: black;
 }
