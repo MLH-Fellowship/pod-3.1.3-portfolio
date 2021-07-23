@@ -9,6 +9,17 @@
 
 /* Global CSS */
 
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: "Open Sans", sans-serif;
+}
+
 body {
   background-color: var(--body-color);
   margin-bottom: 50px;

@@ -1,3 +1,34 @@
+
+#btnTop {
+    display: inline-block;
+    background-color: #0766CA; 
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  #btnTop:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #btnTop:active {
+    background-color: #555;
+  }
+  #btnTop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
 .footer {
   height: 200px;
   background-color: var(--banner-light-blue) !important;
@@ -22,3 +53,4 @@
     }
   }
 }
+
