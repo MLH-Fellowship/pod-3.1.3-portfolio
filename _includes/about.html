@@ -12,7 +12,7 @@
         </div>
 
         <div class="col-xl text-center">
-          <h4><strong>Hello there!</strong></h4>
+          <h3><strong>Hello there!</strong></h3>
           <p class="name">&ensp;{{item.bio1}}</p>
         </div>
       </div>
@@ -20,14 +20,16 @@
       <div class="row text-center">
         <div class="col-xs">
           <img
-            alt="Most used languages on github"
+            id = "github_languages"
+            alt="Most used languages on GitHub"
             class="img-fluid"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username={{site.github_username}}&langs_count=4"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username={{site.github_username}}&langs_count=4&theme=default"
           />
         </div>
         <div class="col-xl">
           <img
-            alt="Github stats"
+            id = "github_stats"
+            alt="GitHub statistics (Total Stars, Total Commits, Total PRs, Total Issues, Contributed to)"
             class="img-fluid"
             src="https://github-readme-stats.vercel.app/api?username={{site.github_username}}&show_icons=true&theme=default"
           />

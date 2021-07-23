@@ -35,6 +35,14 @@
         height: 200px;
         z-index: 1;
     }
+
+    .download {
+      color: var(--title-color);
+      outline: none;
+      background: transparent;
+      border: none;
+      margin-left: 0;
+  }
 }
 
 /* Background Animation */

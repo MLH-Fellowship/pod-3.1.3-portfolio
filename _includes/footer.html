@@ -1,0 +1,56 @@
+
+<div class="footer d-flex flex-column">
+  {% if site.social %}
+  <h1>Connect with me</h1>
+  {% endif %}
+  <div class="d-flex justify-content-center">
+    <!-- If social links are defined in config then icons will show -->
+    {% if site.social.github_username %}
+    <div class="social-image">
+      <a href="https://github.com/{{site.github_username}}">
+        <img src="./assets/img/social/github.png" alt="Github" />
+      </a>
+    </div>
+    {% endif %} 
+    {% if site.social.twitter_username %}
+    <div class="social-image">
+      <a href="https://twitter.com/{{site.twitter_username}}">
+        <img src="./assets/img/social/twitter.png" alt="Twitter" />
+      </a>
+    </div>
+    {% endif %} 
+    {% if site.social.linkedin_username %}
+    <div class="social-image">
+      <!-- This needs to be changed when used as a template to https://www.linkedin.com/in/ -->
+      <a href="https://www.linkedin.com/company/{{site.linkedin_username}}">
+        <img src="./assets/img/social/linkedin.png" alt="Linkedin"
+      /></a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<div>
+    <button onclick="topFunction()" id="btnTop" title="Go to top">&uarr; Top</button>
+</div>
+
+<script>
+
+    var btn = $('#btnTop');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+</script>
+
