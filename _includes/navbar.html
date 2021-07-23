@@ -1,5 +1,6 @@
 <header class="nav-bar">
     <nav class="navbar navbar-expand-xl navbar-light">
+      
         <a class="navbar-brand" href="{{ '/' | relative_url }}">
             <div class="nav-logo">
                 <img src="./assets/img/logo.svg" alt="{{ site.title }}" />
@@ -29,16 +30,18 @@
             <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
+        
       </div>
+      <div class="switch">
+        <input type="checkbox" class="switch__input ml-5 mt-5" id="Switch">
+        <label class="switch__label" for="Switch">
+            <span class="switch__indicator"></span>
+            <span class="switch__decoration"></span>
+        </label>
+    </div>
   </nav>
 
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="theme-switcher">
-            <input type="checkbox" id="theme-switcher" />
-            <div class="slider round"></div>
-      </label>
-
-    </div>
+    
     </div>
 
 
