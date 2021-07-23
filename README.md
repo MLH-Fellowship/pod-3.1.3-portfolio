@@ -6,11 +6,12 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. This will
 
 ## Features
 
-* Easy setup with .yml .sass
+* Easy setup with .yml, .sass and css variables
 * Projects showcase
 * Google Analytics integration
 * GitHub stats and MUL integration
 * Links to your Twitter, GitHub and LinkedIn
+* Downloadable Resume
 * Dark mode
 * Lighthouse Automated Auditing
 * Sweet UI :sunglasses:
@@ -23,9 +24,10 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. This will
 ├── _includes                   # HTML files included in the website
 ├── _layouts                    # Content Structure Rendering
 ├── _sass                       # beauty files
-├── assets                      # Tools and utilities
+├── assets                      # Tools, utilities and resume storage
 │   ├── css                     # Configure your UI Colors
-│   └── img                     # Configurable Images
+│   ├── img                     # Configurable Images
+│   └── js                      # dark mode file
 ├── projects                    # Cards container project section
 ├── _config.yml                 # Configure your information
 ├── .gitignore
@@ -107,6 +109,11 @@ layout: page
   date: Summer 2021
   page-name: project
 ```
+
+## Add your Resume
+
+Inside the folder /assets add your resume file using .pdf format.
+It should be named `resume.pdf`. It will automatically rename it to `{name surname} - resume.pdf"`!
 
 ## Add Google Analytics
 
