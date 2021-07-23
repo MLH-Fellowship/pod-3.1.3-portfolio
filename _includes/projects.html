@@ -3,7 +3,7 @@
   <div class="row">
     {% for item in site.data.projects %}
     <div class="col">
-      <a href="/projects/{{ item.page-name }}"
+      <a
         data-toggle="modal"
         data-target="#exampleModal{{ item.id }}"
         style="cursor: grab"
@@ -26,7 +26,7 @@
     aria-labelledby="exampleModalLabel{{ item.id }}"
     aria-hidden="true"
   >
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">{{ item.title }}</h5>
@@ -40,49 +40,59 @@
           </button>
         </div>
         <div class="modal-body">
-            <p class="title">{{ item.title }}</p>
-            <p class="location">{{ item.event }}</p>
-            <p class="dates">About the project</p>
-            <p class="summary">{{ item.summary }}</p>
+          <p class="title">{{ item.title }}</p>
+          <p class="location">{{ item.event }}</p>
+          <p class="dates">About the project</p>
+          <p class="summary">{{ item.summary }}</p>
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <div class="d-flex justify-content-around modal-footer-icons">
-           
-              <!-- Check if the links exist and then add them -->
-              {% if item.github %}
-                <!-- Github link -->
-                <a href="{{item.github}}" data-toggle="tooltip" data-placement="top" title="Github Link">
-                  <i class="fa fa-github project-footer-icons"></i>
-                </a>
-              {% endif %}
-
-              {% if item.external_link %}
-                <!-- Website Link -->
-                <a href="{{item.external_link}}" data-toggle="tooltip" data-placement="top" title="Deployed Site">
-                  <i class="fas fa-external-link-alt project-footer-icons"></i>
-                </a>
-              {% endif %}
-
-              {% if item.video_demo %}
-                <!-- Video Demo Link -->
-                <a href="{{item.video_demo}}" data-toggle="tooltip" data-placement="top" title="Video Preview">
-                  <i class="fas fa-video project-footer-icons"></i>
-                </a>
-              {% endif %}
-
-            
-          </div>
-          <div>
-            <button type="button" class="btn btn-primary project-close-btn" data-dismiss="modal">
-              Close
-            </button>
-            <a href="/projects/{{ item.page-name }}" class="btn btn-secondary">
-              Read more about {{ item.title }}
+            <!-- Check if the links exist and then add them -->
+            {% if item.github %}
+            <!-- Github link -->
+            <a
+              href="{{item.github}}"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Github Link"
+            >
+              <i class="fa fa-github project-footer-icons"></i>
             </a>
+            {% endif %} {% if item.external_link %}
+            <!-- Website Link -->
+            <a
+              href="{{item.external_link}}"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Deployed Site"
+            >
+              <i class="fas fa-external-link-alt project-footer-icons"></i>
+            </a>
+            {% endif %} {% if item.video_demo %}
+            <!-- Video Demo Link -->
+            <a
+              href="{{item.video_demo}}"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Video Preview"
+            >
+              <i class="fas fa-video project-footer-icons"></i>
+            </a>
+            {% endif %}
           </div>
+          <button
+            type="button"
+            class="btn btn-primary project-close-btn"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+          <a href="/projects/{{ item.page-name }}" class="btn btn-secondary">
+            Read more about {{ item.title }}
+          </a>
         </div>
       </div>
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
 </div>
