@@ -1,21 +1,36 @@
 <header class="nav-bar">
-  <div class="nav-content">
-    <a href="{{ '/' | relative_url }}">
-      <div class="nav-logo">
-        <img src="./assets/img/logo.svg" alt="{{ site.title }}" />
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <div class="nav-logo">
+                <img src="./assets/img/logo.svg" alt="{{ site.title }}" />
+            </div>
+        </a>
+      <button class="navbar-toggler navbar-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recommendations">Recommendations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
       </div>
-    </a>
-    <div class="nav-links">
-      <nav>
-        <a href="#projects"> Projects </a>
-      </nav>
-      <nav>
-        <a href="#experience"> Experience </a>
-      </nav>
-      <nav>
-        <a href="#education"> Education </a>
-      </nav>
-    </div>
+  </nav>
 
     <div class="theme-switch-wrapper">
       <label class="theme-switch" for="theme-switcher">
