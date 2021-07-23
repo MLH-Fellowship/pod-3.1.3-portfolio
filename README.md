@@ -26,7 +26,7 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. This will
 ├── _sass                       # beauty files
 ├── assets                      # Tools, utilities and resume storage
 │   ├── css                     # Configure your UI Colors
-│   ├── img                     # Configurable Images
+│   ├── img                     # Configurable and stored images
 │   └── js                      # dark mode file
 ├── projects                    # Cards container project section
 ├── _config.yml                 # Configure your information
@@ -143,3 +143,7 @@ bundle install
 bundle exec jekyll serve --livereload
 ```
 note: If flag --livereload gives you an error don't use it.
+
+### It should look like something like this:
+
+![template screenshot](/assets/img/template.png)
